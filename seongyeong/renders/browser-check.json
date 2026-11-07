@@ -1,0 +1,15 @@
+{
+  "passed": true,
+  "results": {
+    "pauseControl": true,
+    "scrubControl": true,
+    "deterministicSameTime": true,
+    "animatedScene": true,
+    "knotsContinuous": true,
+    "webgl2": true,
+    "twoKoi": true,
+    "noErrors": true,
+    "restartControl": true
+  },
+  "errors": []
+}

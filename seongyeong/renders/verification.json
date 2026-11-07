@@ -1,0 +1,29 @@
+{
+  "passed": true,
+  "checks": {
+    "codec": true,
+    "dimensions": true,
+    "fps": true,
+    "frames": true,
+    "duration": true,
+    "noAudio": true,
+    "capture450": true,
+    "noBrowserErrors": true,
+    "twoKoi": true,
+    "perspectiveCamera": true,
+    "decodes": true,
+    "continuousCamera": true
+  },
+  "largestCameraStep": 0.3034325782299449,
+  "bytes": 20937351,
+  "sha256": "ee07e2baacfd93d9c65d502c91b78aeba391c8ef05b57eecf0f027fce57b59ff",
+  "video": {
+    "width": 1080,
+    "height": 1920,
+    "fps": "30/1",
+    "frames": 450,
+    "duration": 15,
+    "codec": "h264"
+  },
+  "captureSeconds": 417.613
+}

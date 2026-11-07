@@ -1,0 +1,21 @@
+{
+  "name": "seongyeong-garden-in-clouds",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 0.0.0.0",
+    "build": "vite build",
+    "preview": "vite preview --host 0.0.0.0",
+    "render": "node scripts/render.mjs",
+    "verify": "node scripts/verify.mjs",
+    "check:browser": "node scripts/check-browser.mjs"
+  },
+  "dependencies": {
+    "three": "0.170.0"
+  },
+  "devDependencies": {
+    "vite": "6.0.11",
+    "playwright": "1.58.2"
+  }
+}

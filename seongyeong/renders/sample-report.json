@@ -1,0 +1,139 @@
+{
+  "width": 1080,
+  "height": 1920,
+  "duration": 15,
+  "fps": 30,
+  "frames": 450,
+  "koiCount": 2,
+  "pavilionPosts": 6,
+  "mountains": 28,
+  "renderer": "WebGL2",
+  "camera": "PerspectiveCamera",
+  "cameraKnots": [
+    0,
+    4,
+    8,
+    10,
+    12,
+    15
+  ],
+  "continuous": true,
+  "audio": false,
+  "capturedFrames": 8,
+  "errors": [],
+  "elapsedSeconds": 7.374,
+  "poses": [
+    {
+      "time": 0,
+      "position": [
+        1,
+        15,
+        38
+      ],
+      "target": [
+        0,
+        -12.24,
+        -20
+      ],
+      "drawCalls": 1
+    },
+    {
+      "time": 2,
+      "position": [
+        -0.5375,
+        13.4625,
+        24.775
+      ],
+      "target": [
+        -4.025,
+        -11.34,
+        -18.925
+      ],
+      "drawCalls": 1
+    },
+    {
+      "time": 4,
+      "position": [
+        -2,
+        12,
+        10
+      ],
+      "target": [
+        -7,
+        -10.24,
+        -19
+      ],
+      "drawCalls": 1
+    },
+    {
+      "time": 6,
+      "position": [
+        -3.1875,
+        11.645833333333334,
+        0.375
+      ],
+      "target": [
+        -4.333333333333333,
+        -9.156666666666666,
+        -22.916666666666668
+      ],
+      "drawCalls": 1
+    },
+    {
+      "time": 8,
+      "position": [
+        -2,
+        12,
+        -8
+      ],
+      "target": [
+        0,
+        -8.24,
+        -28
+      ],
+      "drawCalls": 1
+    },
+    {
+      "time": 10,
+      "position": [
+        10,
+        14,
+        -17
+      ],
+      "target": [
+        3,
+        -8.24,
+        -32
+      ],
+      "drawCalls": 1
+    },
+    {
+      "time": 12,
+      "position": [
+        13,
+        13,
+        -20
+      ],
+      "target": [
+        3,
+        -8.040000000000001,
+        -32
+      ],
+      "drawCalls": 1
+    },
+    {
+      "time": 14.9666667,
+      "position": [
+        10.001102878460907,
+        9.001104250198903,
+        -7.004046631165986
+      ],
+      "target": [
+        3.999705624729492,
+        -2.741545538757066,
+        -26.00176625162305
+      ],
+      "drawCalls": 1
+    }
+  ]
+}
