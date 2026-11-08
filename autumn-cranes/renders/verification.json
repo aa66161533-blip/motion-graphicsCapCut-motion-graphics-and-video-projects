@@ -1,0 +1,26 @@
+{
+  "passed": true,
+  "checks": {
+    "h264": true,
+    "portrait9x16": true,
+    "fullHDor4K": true,
+    "fps30": true,
+    "frames450": true,
+    "duration15": true,
+    "silent": true,
+    "twoCranes": true,
+    "fixedScale": true,
+    "bakedRig": true,
+    "rigAndFraming": true,
+    "fullDecode": true
+  },
+  "width": 1080,
+  "height": 1920,
+  "frames": 450,
+  "fps": "30/1",
+  "duration": 15.0,
+  "bytes": 15674037,
+  "sha256": "7ef218e6be4ae8fdfc39af4a0f5c9671b535da89e52dd4a8c75bb866f0aac753",
+  "sceneEngine": "BLENDER_WORKBENCH",
+  "blender": "4.3.2"
+}
