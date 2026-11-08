@@ -1,0 +1,15 @@
+{
+  "passed": true,
+  "checks": {
+    "h264": true,
+    "1080x1920": true,
+    "24fps": true,
+    "360frames": true,
+    "15seconds": true,
+    "silent": true,
+    "fullDecode": true
+  },
+  "bytes": 25671498,
+  "sha256": "63f9dac342c22d9e1c3256a6e688aa6b7804492d0467ba03d8745d1058af2da5",
+  "method": "5–10 second tiger transformation: masked flowing ink front, monochrome brush texture and moving ink flecks; original illustration restored at 10 seconds."
+}

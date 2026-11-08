@@ -23,3 +23,12 @@ python render.py
 `assets/painting.png`와 `assets/leaf.png`는 이 프로젝트를 위해 이미지 생성 도구로 제작한 원화입니다. Python은 먹 번짐, 부분 메시 변형, 잔잔한 수면, 반투명 안개, 작은 단풍잎의 이동을 합성하며 FFmpeg로 MP4를 인코딩합니다.
 
 완성 파일은 `renders/traditional_ink_15s.mp4`, 검증 결과는 `renders/verification.json`입니다. 영상 길이·해상도·프레임 수·오디오 트랙 유무와 전체 디코딩을 검사합니다.
+
+
+### 호랑이 변화 수정본
+
+5~10초에 호랑이의 따뜻한 털빛이 움직이는 먹 번짐을 따라 흑백 수묵 표현으로 바뀌고, 원래의 담채 표현으로 돌아옵니다. 배경 구도는 유지하며 작은 먹 입자가 함께 움직입니다.
+
+- [수정 영상 다운로드](https://raw.githubusercontent.com/aa66161533-blip/motion-graphicsCapCut-motion-graphics-and-video-projects/main/ink-illustration/renders/traditional_ink_tiger_transform_15s.mp4)
+- 재현: `python render_transform.py`
+- 검증 결과: `renders/transform-verification.json`
