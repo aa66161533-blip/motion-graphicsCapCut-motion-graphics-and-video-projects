@@ -1,0 +1,14 @@
+{
+  "frames": 1,
+  "width": 2160,
+  "height": 3840,
+  "engine": "BLENDER_WORKBENCH",
+  "seconds": 3.4231916399985494,
+  "audit": [
+    {
+      "frame": 241,
+      "time": 10.0,
+      "renderSeconds": 3.4189979699985997
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "frames": 8,
+  "width": 1080,
+  "height": 1920,
+  "engine": "BLENDER_WORKBENCH",
+  "seconds": 7.045809019000444,
+  "audit": [
+    {
+      "frame": 1,
+      "time": 0.0,
+      "renderSeconds": 1.5345916709993617
+    },
+    {
+      "frame": 73,
+      "time": 3.0,
+      "renderSeconds": 0.7879637070000172
+    },
+    {
+      "frame": 145,
+      "time": 6.0,
+      "renderSeconds": 0.8268621570023242
+    },
+    {
+      "frame": 193,
+      "time": 8.0,
+      "renderSeconds": 0.7767830740012869
+    },
+    {
+      "frame": 241,
+      "time": 10.0,
+      "renderSeconds": 0.804968746000668
+    },
+    {
+      "frame": 313,
+      "time": 13.0,
+      "renderSeconds": 0.7809553229999437
+    },
+    {
+      "frame": 337,
+      "time": 14.0,
+      "renderSeconds": 0.7597035319995484
+    },
+    {
+      "frame": 360,
+      "time": 14.958333333333334,
+      "renderSeconds": 0.7429352899998776
+    }
+  ]
+}

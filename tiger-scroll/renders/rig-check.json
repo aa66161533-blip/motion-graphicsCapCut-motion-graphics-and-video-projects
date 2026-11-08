@@ -1,0 +1,22 @@
+{
+  "passed": true,
+  "checks": {
+    "oneTigerRig": true,
+    "oneCamera": true,
+    "360Frames": true,
+    "24fps": true,
+    "native4K": true,
+    "blinkAt3Seconds": true,
+    "flatToVolume": true,
+    "silentRoarJaw": true,
+    "continuousCamera": true
+  },
+  "bones": 28,
+  "blinkValue": 1.0,
+  "flatDepth": 0.06499999761581421,
+  "fullDepth": 1.0,
+  "roarJawRadians": 0.6499999761581421,
+  "maxCameraFrameStep": 0.508730128312857,
+  "eyeMeshes": 8,
+  "packedImages": 8
+}

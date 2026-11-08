@@ -1,0 +1,14 @@
+{
+  "passed": true,
+  "checks": {
+    "h264": true,
+    "1080x1920": true,
+    "24fps": true,
+    "360frames": true,
+    "15seconds": true,
+    "silent": true,
+    "decodes": true
+  },
+  "bytes": 8110529,
+  "sha256": "71689bcc267f219b508e497201f5a84bd5bf6751e86f30caf44c0c26f4b25720"
+}

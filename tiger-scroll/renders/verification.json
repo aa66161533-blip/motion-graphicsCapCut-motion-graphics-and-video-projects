@@ -1,0 +1,26 @@
+{
+  "passed": true,
+  "checks": {
+    "h264": true,
+    "native2160x3840": true,
+    "24fps": true,
+    "360Frames": true,
+    "15Seconds": true,
+    "silent": true,
+    "rigChecks": true,
+    "360NativeFrames": true,
+    "fullDecode": true,
+    "originalPaintingRestored": true,
+    "encodedLoopMatches": true
+  },
+  "width": 2160,
+  "height": 3840,
+  "fps": "24/1",
+  "frames": 360,
+  "duration": 15.0,
+  "bytes": 32162920,
+  "sha256": "a3568d772122065cc2683a22763871097322fe9117989f38d681339534131a36",
+  "encodedOpeningClosingMeanPixelError": 0.5178636188271605,
+  "engine": "Blender Workbench 4.3.2",
+  "rendererNote": "Native 4K geometry render, followed by ink grading and a continuous return dissolve."
+}

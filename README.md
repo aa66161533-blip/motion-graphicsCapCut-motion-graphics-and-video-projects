@@ -24,3 +24,13 @@ Python + Blender로 생성한 두 학의 관절 애니메이션과 가을 시골
 - [MP4 검증 결과](autumn-cranes/renders/verification.json)
 
 1080×1920 · 30fps · 450프레임 · 15초 · H.264 · 무음.
+
+
+## The Tiger in the Ink Scroll
+
+A continuous-camera Joseon-inspired ink-wash 3D animation, rendered at native 2160×3840, 24 fps, 360 frames and 15 seconds.
+
+- [4K MP4 download](https://raw.githubusercontent.com/aa66161533-blip/motion-graphicsCapCut-motion-graphics-and-video-projects/main/tiger-scroll/renders/tiger_scroll_15s_4k.mp4)
+- [Blender project and source](tiger-scroll/README.md)
+- [Encoded-file verification](tiger-scroll/renders/verification.json)
+- [Asset provenance](tiger-scroll/assets/LICENSES.md)
