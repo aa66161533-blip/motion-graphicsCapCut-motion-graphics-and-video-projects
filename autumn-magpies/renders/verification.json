@@ -1,0 +1,21 @@
+{
+  "passed": true,
+  "checks": {
+    "h264": true,
+    "1080x1920": true,
+    "24fps": true,
+    "360frames": true,
+    "15seconds": true,
+    "silent": true,
+    "fullDecode": true
+  },
+  "bytes": 12878196,
+  "sha256": "b46a740acc482c7c5a89aade512d624c98702bba20941ab2c321201536208272",
+  "animation": "Two alternating articulated magpie beaks, local head/throat/tail motion and blinking; advecting waterfall and stream, maple movement, moving mist.",
+  "encodedRegionMotionMeanAbsoluteDifference": {
+    "magpieLeft": 10.086,
+    "magpieRight": 11.069,
+    "waterfall": 7.793,
+    "stream": 7.482
+  }
+}

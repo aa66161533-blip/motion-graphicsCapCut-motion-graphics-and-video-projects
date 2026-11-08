@@ -44,3 +44,11 @@ A continuous-camera Joseon-inspired ink-wash 3D animation, rendered at native 21
 - [소스 및 실행 방법](ink-illustration/README.md)
 
 갤럭시 탭에서는 다운로드 링크를 길게 눌러 **링크 다운로드**를 선택하세요.
+
+
+## 추경 — 흐르는 물과 까치의 대화
+
+가을 수묵담채화에 폭포와 개울의 흐름, 까치 두 마리의 부리·고개·꼬리 움직임을 더한 15초 세로 무음 영상입니다. 1080×1920, 24fps, H.264.
+
+- [영상 다운로드](https://raw.githubusercontent.com/aa66161533-blip/motion-graphicsCapCut-motion-graphics-and-video-projects/main/autumn-magpies/renders/autumn_magpies_15s.mp4)
+- [제작 소스와 실행 방법](autumn-magpies/README.md)
