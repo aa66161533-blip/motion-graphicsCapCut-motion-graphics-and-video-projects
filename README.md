@@ -34,3 +34,13 @@ A continuous-camera Joseon-inspired ink-wash 3D animation, rendered at native 21
 - [Blender project and source](tiger-scroll/README.md)
 - [Encoded-file verification](tiger-scroll/renders/verification.json)
 - [Asset provenance](tiger-scroll/assets/LICENSES.md)
+
+
+## 송림의 숨결 — 전통 수묵 일러스트
+
+정교한 호랑이와 소나무 원화에 먹 번짐, 안개, 수면과 단풍잎의 움직임을 더한 15초 무음 영상입니다. 1080×1920, 24fps, H.264이며 전체 디코딩 검증을 통과했습니다.
+
+- [MP4 다운로드](https://raw.githubusercontent.com/aa66161533-blip/motion-graphicsCapCut-motion-graphics-and-video-projects/main/ink-illustration/renders/traditional_ink_15s.mp4)
+- [소스 및 실행 방법](ink-illustration/README.md)
+
+갤럭시 탭에서는 다운로드 링크를 길게 눌러 **링크 다운로드**를 선택하세요.

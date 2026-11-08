@@ -1,0 +1,15 @@
+{
+  "passed": true,
+  "checks": {
+    "h264": true,
+    "1080x1920": true,
+    "24fps": true,
+    "360frames": true,
+    "15seconds": true,
+    "silent": true,
+    "fullDecode": true
+  },
+  "bytes": 25522668,
+  "sha256": "fd36a0f7f9aa8ee5b3fdfee7a2d093dbb050bcf5d9f024f032ec4606f90c99d7",
+  "method": "Traditional illustration with capillary ink reveal, localized pine/water deformation, animated mist and painted leaves."
+}
