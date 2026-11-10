@@ -1,0 +1,16 @@
+{
+  "passed": true,
+  "checks": {
+    "h264": true,
+    "1080x1920": true,
+    "30fps": true,
+    "450frames": true,
+    "15seconds": true,
+    "silent": true,
+    "fullDecode": true
+  },
+  "sha256": "e21fb3978a033af1e8307f670b850588c0fc1e0d6f27c581c0b337b4d586befd",
+  "sourceType": "User-authorized reconstruction from attached preview; not pixel-identical to original",
+  "sourceSha256": "4bf03ab8acf289663920683b8c2f04aac890c8f7325487baae9b05ec3a1fd7a5",
+  "method": "Original lettering retained as image pixels; rigid camera scale; local leaf animation, background parallax, rising steam, existing-heart glow."
+}

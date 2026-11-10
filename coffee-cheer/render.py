@@ -31,6 +31,7 @@ class Scene:
   bright=np.clip((self.base.mean(axis=2)-145)/80,0,1)
   self.heart=(heartzone*bright*np.clip(warm/75,0,1)).astype(np.float32)
   self.heart=cv2.GaussianBlur(self.heart,(0,0),7)
+  self.steamzone=(np.exp(-((self.u-.52)/.095)**4)*np.clip((self.v-.415)/.04,0,1)*np.clip((.617-self.v)/.035,0,1)*(1-self.protect)*(1-np.clip(heartzone,0,1))).astype(np.float32)
 
  def frame(self,t):
   # Smooth continuous push, hold, then pull back. Lettering scales rigidly.
@@ -42,6 +43,9 @@ class Scene:
   wind=float(ease(6,6.6,t))*(1-.7*float(ease(9.4,10.5,t)))
   mx+=self.leaves*wind*(5*np.sin(t*1.8+self.v*7)+1.5*np.sin(t*2.7+self.u*9))
   my+=self.leaves*wind*1.8*np.sin(t*1.8+self.u*6)
+  steam_on=float(ease(3,3.7,t))
+  mx+=self.steamzone*steam_on*3.5*np.sin(self.v*45-t*2.2)
+  my+=self.steamzone*steam_on*1.3*np.sin(self.u*35-t*1.7)
   image=cv2.remap(self.base,mx,my,cv2.INTER_CUBIC,borderMode=cv2.BORDER_REFLECT).astype(np.float32)
   # Procedural layered steam begins at three seconds and rises continuously.
   strength=float(ease(3,3.7,t))*(1-.55*float(ease(12.7,15,t)))
@@ -53,7 +57,7 @@ class Scene:
      px=.525+(j-2)*.010+.018*q*np.sin(q*8-t*1.45+j*.9)
      py=.626-q*.195
      points.append((round(px*W/2),round(py*H/2)))
-    cv2.polylines(steam,[np.array(points,np.int32)],False,.11*strength,2,cv2.LINE_AA)
+    cv2.polylines(steam,[np.array(points,np.int32)],False,.30*strength,3,cv2.LINE_AA)
    steam=cv2.GaussianBlur(steam,(0,0),3.2)
    steam=cv2.resize(steam,(W,H),interpolation=cv2.INTER_LINEAR)*(1-self.protect)
    image=image*(1-steam[:,:,None])+np.array([255,240,217])*steam[:,:,None]
@@ -75,7 +79,7 @@ class Scene:
   return np.uint8(np.clip(image,0,255))
 
 def main():
- ap=argparse.ArgumentParser();ap.add_argument('--image',type=Path,default=ROOT/'assets/coffee-original.png');ap.add_argument('--output',type=Path,default=ROOT/'renders/output.mp4');ap.add_argument('--preview',action='store_true');args=ap.parse_args()
+ ap=argparse.ArgumentParser();ap.add_argument('--image',type=Path,default=ROOT/'assets/coffee-reconstructed.png');ap.add_argument('--output',type=Path,default=ROOT/'renders/output.mp4');ap.add_argument('--preview',action='store_true');args=ap.parse_args()
  if not args.image.is_file():ap.error('Original image is missing. Save the attached ORIGINAL PNG/JPG and pass --image /path/to/file. No video has been rendered.')
  scene=Scene(args.image);args.output.parent.mkdir(parents=True,exist_ok=True)
  if args.preview:
@@ -92,7 +96,7 @@ def main():
  probe=json.loads(subprocess.check_output(['ffprobe','-v','error','-count_frames','-show_streams','-show_format','-of','json',str(args.output)]));v=probe['streams'][0]
  checks={'h264':v['codec_name']=='h264','1080x1920':(v['width'],v['height'])==(W,H),'30fps':v['r_frame_rate']=='30/1','450frames':int(v['nb_read_frames'])==N,'15seconds':abs(float(probe['format']['duration'])-15)<.001,'silent':len(probe['streams'])==1}
  r=subprocess.run(['ffmpeg','-v','error','-i',str(args.output),'-f','null','-'],capture_output=True,text=True);checks['fullDecode']=r.returncode==0 and not r.stderr.strip()
- report={'passed':all(checks.values()),'checks':checks,'sha256':hashlib.sha256(args.output.read_bytes()).hexdigest(),'sourceSha256':hashlib.sha256(args.image.read_bytes()).hexdigest(),'method':'Original lettering retained as image pixels; rigid camera scale; local leaf animation, background parallax, rising steam, existing-heart glow.'}
+ report={'passed':all(checks.values()),'checks':checks,'sha256':hashlib.sha256(args.output.read_bytes()).hexdigest(),'sourceType':'User-authorized reconstruction from attached preview; not pixel-identical to original','sourceSha256':hashlib.sha256(args.image.read_bytes()).hexdigest(),'method':'Original lettering retained as image pixels; rigid camera scale; local leaf animation, background parallax, rising steam, existing-heart glow.'}
  (args.output.parent/'verification.json').write_text(json.dumps(report,indent=2));print(json.dumps(report,indent=2))
  if not report['passed']:raise SystemExit(1)
 if __name__=='__main__':main()

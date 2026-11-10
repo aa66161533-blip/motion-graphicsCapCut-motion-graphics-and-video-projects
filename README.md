@@ -60,3 +60,11 @@ A continuous-camera Joseon-inspired ink-wash 3D animation, rendered at native 21
 
 - [영상 다운로드](https://raw.githubusercontent.com/aa66161533-blip/motion-graphicsCapCut-motion-graphics-and-video-projects/main/golden-autumn/renders/golden_autumn_15s.mp4)
 - [소스 및 실행 방법](golden-autumn/README.md)
+
+
+## Today I Cheer for You — 가을 커피 모션 그래픽
+
+첨부 이미지를 사용자 승인에 따라 재구성한 작업용 원화로 제작한 15초 세로 영상입니다. 1080×1920, 30fps, 450프레임, H.264, 무음. 글자는 첫 프레임부터 유지되며 커피 김, 단풍의 흔들림, 황금빛 하트와 부드러운 확대·축소를 합성합니다.
+
+- [영상 다운로드: output.mp4](https://raw.githubusercontent.com/aa66161533-blip/motion-graphicsCapCut-motion-graphics-and-video-projects/main/coffee-cheer/renders/output.mp4)
+- [소스 및 실행 방법](coffee-cheer/README.md)

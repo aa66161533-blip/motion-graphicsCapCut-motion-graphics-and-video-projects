@@ -1,8 +1,8 @@
 # Today I Cheer for You — 원본 보존 커피 모션 그래픽
 
-현재 상태: 원본 이미지 파일 입력 대기. 완성 MP4가 아직 생성되지 않았습니다.
+현재 상태: 렌더링 및 규격·전체 디코딩 검증 완료. 사용자 승인에 따라 첨부 미리보기를 참고해 재구성한 작업용 이미지로 제작했습니다. 첨부 원본과 픽셀 단위로 동일하지 않습니다. 최종 검증 결과는 renders/verification.json에 기록합니다.
 
-원본 영문을 이미지 픽셀로 보존하며 재생성하거나 다시 타이핑하지 않습니다. 원본의 색감과 구도를 유지하는 패럴랙스 합성 방식이며, 실제 3D 모델을 사용하는 방식은 아닙니다.
+재구성된 작업용 이미지에 들어 있는 영문을 고정된 이미지 픽셀로 유지하며 애니메이션 중 다시 생성하지 않습니다. 첨부 이미지의 색감과 구도를 참고한 패럴랙스 합성 방식이며, 실제 3D 모델을 사용하는 방식은 아닙니다.
 
 - 0~3초: 원본 제목을 첫 프레임부터 유지하며 부드럽게 확대
 - 3~6초: 커피잔 위로 올라가는 따뜻한 김
@@ -19,15 +19,20 @@ Python 3.11 이상과 FFmpeg/FFprobe가 필요합니다.
 python -m venv .venv
 . .venv/bin/activate
 pip install -r requirements.txt
-python render.py --image /path/to/coffee-original.png --output renders/output.mp4
+python render.py --image assets/coffee-reconstructed.png --output renders/output.mp4
 ```
 
-입력은 첨부한 원본 PNG/JPG 파일을 사용하세요. 기본 입력 위치는 `assets/coffee-original.png`입니다. JPG 입력도 `--image`로 지정할 수 있습니다.
+원본 PNG/JPG 파일을 확보한 경우 --image로 해당 파일을 지정하면 재구성 이미지 대신 사용할 수 있습니다. 기본 입력 위치는 `assets/coffee-reconstructed.png`입니다. JPG 입력도 `--image`로 지정할 수 있습니다.
 
 중간 화면만 확인:
 
 ```sh
-python render.py --image /path/to/coffee-original.png --preview
+python render.py --image assets/coffee-reconstructed.png --preview
 ```
 
-렌더링 후 프레임 수·길이·코덱·해상도·프레임레이트·무음·전체 디코딩을 검사하고 `renders/verification.json`에 기록합니다. 원본 글자는 다시 생성하지 않지만, 최종 글자 가독성은 원본 파일로 렌더링한 후 시각 확인해야 합니다.
+렌더링 후 프레임 수·길이·코덱·해상도·프레임레이트·무음·전체 디코딩을 검사하고 `renders/verification.json`에 기록합니다. 작업용 이미지에 담긴 글자는 애니메이션 중 다시 생성하지 않지만, 최종 글자 가독성은 원본 파일로 렌더링한 후 시각 확인해야 합니다.
+
+
+[완성 영상 다운로드](https://raw.githubusercontent.com/aa66161533-blip/motion-graphicsCapCut-motion-graphics-and-video-projects/main/coffee-cheer/renders/output.mp4)
+
+갤럭시 탭에서는 링크를 길게 눌러 **링크 다운로드**를 선택하세요.
