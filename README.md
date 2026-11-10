@@ -52,3 +52,11 @@ A continuous-camera Joseon-inspired ink-wash 3D animation, rendered at native 21
 
 - [영상 다운로드](https://raw.githubusercontent.com/aa66161533-blip/motion-graphicsCapCut-motion-graphics-and-video-projects/main/autumn-magpies/renders/autumn_magpies_15s.mp4)
 - [제작 소스와 실행 방법](autumn-magpies/README.md)
+
+
+## 황금빛 가을의 숨결
+
+가을 단풍 사진을 참고해 재구성한 산경에 단풍의 바람, 계곡 안개, 호수 반짝임, 낙엽과 느린 카메라 움직임을 더한 15초 세로 무음 영상입니다.
+
+- [영상 다운로드](https://raw.githubusercontent.com/aa66161533-blip/motion-graphicsCapCut-motion-graphics-and-video-projects/main/golden-autumn/renders/golden_autumn_15s.mp4)
+- [소스 및 실행 방법](golden-autumn/README.md)

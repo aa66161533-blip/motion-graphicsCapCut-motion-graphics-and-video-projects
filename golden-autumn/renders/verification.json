@@ -1,0 +1,19 @@
+{
+  "passed": true,
+  "checks": {
+    "h264": true,
+    "1080x1920": true,
+    "24fps": true,
+    "360frames": true,
+    "15seconds": true,
+    "silent": true,
+    "fullDecode": true
+  },
+  "bytes": 21538693,
+  "sha256": "faf8aaa09017a15a7b7cc68fbe7d0056d5af5c4f5f1eefe5a871afae086d371b",
+  "animation": "Depth-dependent slow camera push, canopy breeze, travelling valley mist, sunlit lake ripples and four tiny drifting maple leaves.",
+  "encodedMotionRegionDifference": {
+    "canopy": 18.881,
+    "lake": 2.159
+  }
+}
