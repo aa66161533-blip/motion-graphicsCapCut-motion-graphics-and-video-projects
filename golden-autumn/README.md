@@ -30,3 +30,13 @@ python render.py
 - [5초 부근 미리보기: 전체 영상의 4~8초](https://raw.githubusercontent.com/aa66161533-blip/motion-graphicsCapCut-motion-graphics-and-video-projects/main/golden-autumn/renders/golden_autumn_wind_4-8s.mp4)
 - 재현: `python render_wind.py`
 - 검증 결과: `renders/wind-verification.json`
+
+
+## 5초부터 숲 전체를 지나는 바람의 물결
+
+5초 이후 바람의 앞부분이 숲을 순차적으로 지나가며 가까운 숲은 크게, 먼 숲은 작게 흔들립니다. 따뜻한 색의 수관을 마스킹해 바위와 물, 하늘, 푸른 능선의 움직임을 억제합니다.
+
+- [전체 15초 수정본](https://raw.githubusercontent.com/aa66161533-blip/motion-graphicsCapCut-motion-graphics-and-video-projects/main/golden-autumn/renders/golden_autumn_forest_wave_15s.mp4)
+- [바람의 물결 구간: 5~11초](https://raw.githubusercontent.com/aa66161533-blip/motion-graphicsCapCut-motion-graphics-and-video-projects/main/golden-autumn/renders/golden_autumn_forest_wave_5-11s.mp4)
+- 재현: `python render_forest_wave.py`
+- 검증 결과: `renders/forest-wave-verification.json`

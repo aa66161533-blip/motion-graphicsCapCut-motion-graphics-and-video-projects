@@ -1,0 +1,19 @@
+{
+  "passed": true,
+  "checks": {
+    "h264": true,
+    "1080x1920": true,
+    "24fps": true,
+    "360frames": true,
+    "15seconds": true,
+    "silent": true,
+    "fullDecode": true
+  },
+  "bytes": 22607393,
+  "sha256": "eb9783a6ad5be35bdea83ee291a7b2d868ee1ce35eb2a3318278fb341b10505d",
+  "animation": "From 5 seconds a travelling wind front and coherent rolling wave cross the whole warm-colored forest at multiple depths, masking out sky, blue ridges, lake and grey rocks. Falling leaves and canopy gust retained.",
+  "encodedForestChangeVersusPreviousVersion": {
+    "middleForest": 28.411,
+    "nearForest": 28.337
+  }
+}
