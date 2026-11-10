@@ -1,0 +1,15 @@
+{
+  "passed": true,
+  "checks": {
+    "h264": true,
+    "1080x1920": true,
+    "24fps": true,
+    "360frames": true,
+    "15seconds": true,
+    "silent": true,
+    "fullDecode": true
+  },
+  "bytes": 16135774,
+  "sha256": "f17ec13decdf6791f799b20eea2d2fef3ab08fd2931b5057590c71f2bc8a62eb",
+  "animation": "Gust centered at 5.3 seconds with stronger canopy sway and sixteen staggered tumbling falling leaves, plus existing mist, lake and camera motion."
+}
